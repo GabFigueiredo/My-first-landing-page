@@ -69,11 +69,7 @@ color: white;
     .paragraph {
         font-size: 18px;
     }
-
-    img {
-        /* height: min-content; */
-    }
-
+    
     .image-rounded {
         border-radius: 50px;
     }
