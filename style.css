@@ -8,7 +8,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
     display: flex;
     /* border: 1px solid #fff; */
     background-color: #1F2937;
-    padding: 20px 0 20px 0;
+    padding: 35px 0 20px 0;
     flex-wrap: wrap;
 }
 
@@ -28,7 +28,7 @@ color: white;
 
 .header {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .headlink {
@@ -42,7 +42,7 @@ color: white;
     display:flex;
     background-color: #1F2937;
     flex-wrap: wrap;
-    padding: 2rem 25rem 2rem 25rem;
+    padding: 2rem 25rem 3rem 25rem;
 }
 
 .body {
@@ -80,7 +80,11 @@ color: white;
     }
 
     .first-button {
-        background-color: #3882f6;
+        background-image: linear-gradient(
+        315deg,
+      hsl(217deg 91% 59%) 0%,
+      hsl(218deg 68% 41%) 50%,
+      hsl(216deg 96% 22%) 100% );
         color: white;
         border: none;
         border-radius: 15px;
@@ -90,45 +94,71 @@ color: white;
 
 .third-section-container {
     background-color: white;
-    padding: 2rem 30rem 2rem 30rem;
+    padding: 3rem 33rem 6rem 33rem;
 }
 
-#sub-header {
+    #sub-header {
+        display: flex;
+        justify-content: center;
+        font-size: 36px;
+        font-weight: bold;
+        color: #1F2937
+    }
+
+    .control-roles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex: 1;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+
+    .role1,
+    .role2,
+    .role3,
+    .role4 {
+        display: flex;
+        width: min-content;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rounded-square {
+        display: flex;
+        width: 150px;
+        height: 150px;
+        padding: 10px;
+        border: 3px solid #3882f6;
+        border-radius: 20px;
+    }
+
+    .subscription {
+        text-align: center;
+        display: flex;
+    }
+
+.fourth-section {
+    background-color: #E5E7EB;
     display: flex;
-    justify-content: center;
-    font-size: 36px;
-    font-weight: bold;
-    color: #1F2937
+    padding: 3rem 33rem 6rem 33rem;
 }
 
-.control-roles {
+.fourth {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    gap: 1rem;
-}
-
-.role1,
-.role2,
-.role3,
-.role4 {
-    display: flex;
+    /* width: 800px;     */
     flex-direction: column;
-    align-items: center;
-    border: 1px solid salmon;
+    align-items: flex-end;
 }
 
-.rounded-square {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    border: 3px solid #3882f6;
-    border-radius: 20px;
+#quote {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
 }
 
-.subscription {
-    text-align: center;
+#author {
+    font-size: 20px;
+    font-weight: bold;
 }
